@@ -2,12 +2,12 @@ public class ArrayConverter {
 
     public static int loopMaximalElementInOneDimensionalArray(int oneArray[]) {
         int maxElement = 0;
-//        for (int i=0 ; i<oneArray.length;i++){
-//            if (oneArray[i] > maxElement) { maxElement = oneArray[i]; };
-//        }
-        for (int i : oneArray){             // почему не работает
+        for (int i=0 ; i<oneArray.length;i++){
             if (oneArray[i] > maxElement) { maxElement = oneArray[i]; };
         }
+//        for (int i : oneArray){             // почему не работает
+//            if (oneArray[i] > maxElement) { maxElement = oneArray[i]; };
+//        }
         return maxElement;
     }
 
