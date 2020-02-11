@@ -34,6 +34,19 @@ public class ArrayTools {
         }
         return "Смена столбцов выполнена";
     }
+
+    public static int mainDiagonal(int twoArray[][]){
+        int i = 0;
+        int j = 0;
+        int sumDiagonal = 0;
+        for (int k = 0; k < twoArray.length; k++, i++, j++) {
+            if(i == j){
+                sumDiagonal += twoArray[i][j];
+            }
+        }
+        return sumDiagonal;
+    }
+
 }
 
 //        главная диагональ
