@@ -11,7 +11,7 @@ public class ArrayConverter {
         return maxElement;
     }
 
-    public static boolean swapLines(int twoArray[][]) {
+    public static String swapLines(int twoArray[][]) {
         int i = 0;
         int j = 2;
         for (int k = 0; k < twoArray.length; k++) {
@@ -20,10 +20,10 @@ public class ArrayConverter {
             twoArray[i][k] = twoArray[j][k];
             twoArray[j][k] = arrayZ[0][0];
         }
-        return true;
+        return "Смена строк выполнена";
     }
 
-    public static boolean swapColumns(int twoArray[][]){
+    public static String swapColumns(int twoArray[][]){
         int i = 0;
         int j = 2;
         for (int k = 0; k < twoArray.length; k++) {
@@ -32,7 +32,7 @@ public class ArrayConverter {
             twoArray[k][i] = twoArray[k][j];
             twoArray[k][j] = arrayZ[0][0];
         }
-        return true;
+        return "Смена столбцов выполнена";
     }
 }
 
